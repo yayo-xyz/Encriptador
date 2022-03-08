@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primer Challenge Alura - Esteban Rivas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  
+<div class="words word-1">
+  <span>C</span>
+  <span>O</span>
+  <span>D</span>
+  <span>I</span>
+  <span>G</span>
+  <span>O</span>
+  <span></span>
+  </div>
+<div class="words word-2">
+  <span>S</span>
+  <span>E</span>
+  <span>C</span>
+  <span>R</span>
+  <span>E</span>
+  <span>T</span>
+  <span>O</span>
+</div>
+  
+
+  <main class="main">
+    <section class="form box">
+      <form action="" id="formu" autocomplete="false" onclick="noCargar(event)" onkeypress="return validacion(event)", required>
+        <label for="input-texto" class="subtitulo">Solo letras minúsculas, sin acento...</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" spellcheck="false" placeholder="Ingrese el texto aqui">
+        <input class="btn" type="submit" value="encriptar!" id="btn-encriptar" onclick="encriptar()">
+        <input class="btn" type="submit" value="desencriptar!" id="btn-desencriptar" onclick="desencriptar()">
+        <input class="btn" type="submit" value="limpiar" id="btn-limpiar" onclick="document.getElementById('input-texto').value = ''">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 class="subtitulo">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="msg" spellcheck="false" placeholder="Aquí aparecerá su mensaje encriptado..."></input>
+      <input class="btn" type="submit" value="copiar" id="btn-copy" onclick="copiar()">
+      <input class="btn" type="submit" value="limpiar" id="btn-limpiar2" onclick="limpiar2()">
+    </section>
+  </main>
+
+  
+</body>
+</html>
